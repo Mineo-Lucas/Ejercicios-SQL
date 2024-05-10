@@ -78,7 +78,24 @@ select * from Reparto where Nombre='robert'
 select * from [Peliculas.Reparto]
 update [Peliculas.Reparto] set IdReparto=107 where Id=11
 
+--ejercicio 17()
+select * from Plataformas
+update Plataformas set Nombre='MaxiPrograma TV' where Id=10
 
+--ejercicio 18
+select * from Peliculas
+select * from Clasificaciones
+select * from [Peliculas.Clasificaciones]
+update [Peliculas.Clasificaciones] set IdClasificacion=1 where Id=12
 
+--ejercicio 19
+select * from Usuarios
+delete from Usuarios where Id=3
 
+--ejercicio 20
+select * from [Peliculas.Puntuacion]
+delete from [Peliculas.Puntuacion] where YEAR(FechaPuntuacion) between 2022 and 2023
 
+--ejercicio 21
+select * from Peliculas
+delete from Peliculas where YEAR(FechaEstreno) between 1980 and 1989
